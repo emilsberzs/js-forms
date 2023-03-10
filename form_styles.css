@@ -24,3 +24,8 @@ input:focus:invalid {
 .error.active {
     padding: 0.3em;
 }
+
+span {
+    margin-top: 10px;
+    display: block;
+}
