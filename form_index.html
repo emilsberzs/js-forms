@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="form_main.js" defer></script>
+    <link rel="stylesheet" href="form_styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Web form JS validation</title>
+</head>
+
+<body>
+    <form action="" novalidate>
+        <p>
+            <label for="mail">Please Enter Your email</label>
+            <input type="email" name="mail" id="mail" required minlength="7">
+            <span class="error" id="email_error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="country">Please enter your Country</label>
+            <input type="text" name="country" id="country" required minlength="2">
+            <span class="error" id="country_error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="zip">Please enter Your ZIP code</label>
+            <input type="text" name="zip" id="zip" required minlength="6">
+            <span class="error" id="zip_error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="password">Enter Your password</label>
+            <input type="text" id="password" name="password" required minlength="6">
+            <span class="error" id="password_error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="confirm">Confirm password</label>
+            <input type="text" name="confirm" id="confirm" required minlength="6">
+            <span class="error" id="confirm_error" aria-live="polite"></span>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
